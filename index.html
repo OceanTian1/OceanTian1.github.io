@@ -361,19 +361,44 @@
 
 
                     <!-- Project 3 -->
-                    <article class="project-card" id="flood-project">
-                        <p class="project-category">SAR Workflow Prototype</p>
-                        <h3>Sentinel-1 Flood Mapping with Backscatter Change Detection</h3>
-                        <p>I prototyped a Google Earth Engine workflow using Sentinel-1 GRD VV imagery in IW mode on descending passes. The script compares a 1 June–1 July 2021 baseline window with a 2 July–1 August 2021 event window using median composites and a 50 m focal-median filter.</p>
-                        <p>The coded classification combines a backscatter decrease greater than 2 dB with event VV below −16 dB, excludes JRC permanent water with occurrence ≥90%, and sums pixel areas at 10 m sampling. The workflow remains a prototype under validation; no validated flood-area or accuracy result is reported.</p>
-                        <div class="technology-list">
-                            <span>Sentinel-1</span>
-                            <span>Google Earth Engine</span>
-                            <span>Change Detection</span>
-                            <span>JRC Surface Water</span>
-                            <span>Area Estimation</span>
-                        </div>
-                    </article>
+                    <a
+    class="project-card project-link"
+    id="flood-project"
+    href="https://github.com/OceanTian1/flood-spatiotemporal-monitoring"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <p class="project-category">
+        SAR Remote Sensing
+    </p>
+
+    <h3>
+        Sentinel-1 Flood Mapping with Backscatter Change Detection
+    </h3>
+
+    <p>
+        I reconstructed a Sentinel-1 SAR flood-mapping workflow
+        in Google Earth Engine using VV imagery from descending
+        relative orbit 105. Pre-flood and flood-period median
+        composites were compared using backscatter change detection.
+    </p>
+
+    <p>
+        The workflow combines a backscatter decrease greater than
+        2 dB, flood-period VV below −16 dB, pre-flood VV above
+        or equal to −16 dB, JRC permanent-water masking and
+        connected-pixel filtering. It identified approximately
+        3.27 km² of potential inundation within the study area.
+    </p>
+
+    <div class="technology-list">
+        <span>Sentinel-1</span>
+        <span>SAR</span>
+        <span>Google Earth Engine</span>
+        <span>Change Detection</span>
+        <span>Flood Mapping</span>
+    </div>
+</a>
 
                 </div>
 
