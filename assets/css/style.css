@@ -659,7 +659,21 @@ textarea {
     color: var(--text-secondary);
 }
 
+.project-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
 
+.project-link:visited {
+    color: inherit;
+}
+
+.project-link:hover {
+    color: inherit;
+    text-decoration: none;
+}
 /* =========================
    Education Timeline
 ========================= */
