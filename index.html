@@ -341,24 +341,53 @@
                             <span>Optical Imagery</span>
                         </div>
 
-                    </article>
+                    <a
+    class="project-card project-link"
+    id="ndvi-project"
+    href="https://github.com/OceanTian1/sentinel2-ndvi-timeseries"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <img
+        class="ndvi-project-preview"
+        src="assets/img/projects/ndvi_analysis.png"
+        alt="Annual median Sentinel-2 NDVI map of the study area in northeastern China"
+        loading="lazy"
+    >
 
+    <p class="project-category">
+        Optical Remote Sensing
+        <span aria-hidden="true">↗</span>
+    </p>
 
-                    <!-- Project 2 -->
-                    <article class="project-card" id="ndvi-project">
-                        <p class="project-category">Optical Remote Sensing</p>
-                        <h3>Sentinel-2 NDVI Time-Series Analysis and Median Compositing</h3>
-                        <p>I scripted a 2020 Sentinel-2 surface-reflectance workflow in Google Earth Engine using COPERNICUS/S2_SR. I filtered scenes by region and scene cloud cover below 40%, calculated NDVI from B8 and B4, and computed per-image regional means.</p>
-                        <p>The workflow constructs a temporal median NDVI composite clipped to the study area and configures GeoTIFF export at 30 m sampling in EPSG:4326. The statistics are per image rather than daily aggregates; export completion has not been verified.</p>
-                        <div class="technology-list">
-                            <span>Sentinel-2</span>
-                            <span>Google Earth Engine</span>
-                            <span>JavaScript</span>
-                            <span>NDVI</span>
-                            <span>Median Compositing</span>
-                        </div>
-                    </article>
+    <h3>
+        Sentinel-2 NDVI Mapping and Monthly Seasonal Analysis
+    </h3>
 
+    <p>
+        I developed a Google Earth Engine workflow to analyse
+        Sentinel-2 surface reflectance across a 30.27 km² study
+        area in northeastern China during 2020. The workflow
+        applies cloud and shadow masking, calculates NDVI,
+        and produces annual maps and monthly composites.
+    </p>
+
+    <p>
+        Regional mean NDVI from monthly median composites
+        peaked at 0.7926 in July and reached a minimum of
+        0.0917 in December, showing pronounced seasonal
+        variation. Code, figures and exported data are
+        available in the project repository.
+    </p>
+
+    <div class="technology-list">
+        <span>Sentinel-2</span>
+        <span>NDVI</span>
+        <span>Google Earth Engine</span>
+        <span>Time-Series Analysis</span>
+        <span>Vegetation Monitoring</span>
+    </div>
+</a>
 
                     <!-- Project 3 -->
                     <a
